@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text("News"),
-            Text("Paper", style: TextStyle(color: Colors.blue),),
+            Text("Paper", style: TextStyle(color: Colors.teal),),
           ],
         ),
         centerTitle: true,
@@ -53,7 +53,7 @@ class _HomeState extends State<Home> {
         ),
       ) : SingleChildScrollView(
         child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           child: Column(
             children: <Widget>[
               ///Categories
@@ -158,9 +158,9 @@ class BlogTile extends StatelessWidget {
                 child: Image.network(imageUrl),
             ),
             SizedBox(height: 8,),
-            Text(title, style: TextStyle(fontSize: 18, color: Colors.black87, fontWeight: FontWeight.w600),),
+            Text(title, style: TextStyle(fontSize: 18, color: Colors.white, fontWeight: FontWeight.w600),),
             SizedBox(height: 8,),
-            Text(desc, style: TextStyle(color: Colors.black54),),
+            Text(desc, style: TextStyle(color: Colors.white54),),
           ],
         ),
       ),
